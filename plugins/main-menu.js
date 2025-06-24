@@ -8,17 +8,17 @@ let handler = async (m, { conn, args }) => {
     let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
     
     let txt = `
-Hola! @${userId.split('@')[0]} Soy  *M500 ULTRA BOT*
+Hello! @${userId.split('@')[0]} Am  *M500 ULTRA BOT*
 
-Aquí tienes la lista de comandos
+Here is the list of commands 
 ╭┈ INFO - BOT
-│Creador: Félix Manuel 
-│Bot: ${(conn.user.jid == global.conn.user.jid ? 'Principal 🅥' : 'Prem Bot 🅑')}
-│Tiempo activo: ${uptime}
-│Registros: ${totalreg}
-│💎 Comandos: ${totalCommands}
+│owner: Félix Manuel 
+│Bot: ${(conn.user.jid == global.conn.user.jid ? 'Offcial' : 'Prem Bot')}
+│Active time: ${uptime}
+│Records: ${totalreg}
+│Commands: ${totalCommands}
 ╰─────────────────
-Conviertete en *Sub-Bot* con tu número utilizando *#qr* o *#code*
+Become a subbot using #code or #qr
 
 • :･ﾟ⊹˚• \`『 INFO 』\` •˚⊹:･ﾟ•
 
