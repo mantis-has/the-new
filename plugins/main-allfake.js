@@ -32,7 +32,7 @@ global.ofcbot = `${conn.user.jid.split('@')[0]}`
 global.namechannel = '🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬𝐂h҉a҉n҉n̸e҉l҉⋆͙̈么͟͞──'
 global.namechannel2 = '🩵̶۫̄͟Ⓜ︎𓏲𝐌𝐚𝐤𝐢𝐦𝐚 𓊓̵̬ 𝐂h҉a҉n҉n̸e҉l҉⋆͙̈么͟͞──'
 global.namegrupo = '🩵̶۫̄͟Ⓜ︎𓏲𝐌500𓍲̈͜𝗨̴ᥣ̥𝗍̈rᥲ̄𓊓̵̬Grupo⋆͙̈么͟͞──'
-global.namecomu = 'Deymoon Club Oficial'
+global.namecomu = 'Deymoon Club Official'
 global.listo = '💎 *Aquí tienes.*'
 global.fotoperfil = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')
 
@@ -60,10 +60,10 @@ global.emoji4 = '🩵'
 global.emoji5 = '💎'
 global.emojis = [emoji, emoji2, emoji3, emoji4].getRandom()
 
-global.wait = '🩵 Espera un momento, soy lento...';
-global.waitt = '🩵 Espera un momento, soy lento...';
-global.waittt = '🩵 Espera un momento, soy lento...';
-global.waitttt = '🩵 Espera un momento, soy lento...';
+global.wait = '🩵 Wait a minute, I'm slow...';
+global.waitt = '🩵 Wait a minute, I'm slow...';
+global.waittt = '🩵 Wait a minute, I'm slow...';
+global.waitttt = '🩵 Wait a minute, I'm slow...';
 
 var canal = 'https://whatsapp.com/channel/0029VbAa5sNCsU9Hlzsn651S'  
 var comunidad = 'https://chat.whatsapp.com/BhafPVUdbSG0UN5pJrNTXh'
