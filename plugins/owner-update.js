@@ -1,29 +1,20 @@
-import { exec } from 'child_process';
+import { execSync } from 'child_process'
+let handler = async (m, { conn, text }) => {
 
-let handler = async (m, { conn }) => {
-  m.reply(`${emoji2} Actualizando el bot...`);
+try {
+await m.react(rwait)
+if (conn.user.jid == conn.user.jid) {
+let stdout = execSync('git pull' + (m.fromMe && text ? ' ' + text : ''))
+await conn.reply(m.chat, stdout.toString(), m, rcanal)
+await m.react(done)}
+} catch (e) {
+await m.react(error)
+await m.reply('🚩 Se han hecho cambios locales qué entran en conflicto con las Actualizaciones del Repositorio, Para actualizar, reinstala el Bot o realiza las actualizaciones manualmente.')
+}}
 
-  exec('git pull', (err, stdout, stderr) => {
-    if (err) {
-      conn.reply(m.chat, `${msm} Error: No se pudo realizar la actualización.\nRazón: ${err.message}`, m);
-      return;
-    }
+handler.help = ['update', 'actualizar']
+handler.tags = ['owner']
+handler.command = ['update', 'actualizar']
+handler.rowner = true
 
-    if (stderr) {
-      console.warn('Advertencia durante la actualización:', stderr);
-    }
-
-    if (stdout.includes('Already up to date.')) {
-      conn.reply(m.chat, `${emoji4} El bot ya está actualizado.`, m);
-    } else {
-      conn.reply(m.chat, `${emoji} Actualización realizada con éxito.\n\n${stdout}`, m);
-    }
-  });
-};
-
-handler.help = ['update'];
-handler.tags = ['owner'];
-handler.command = ['update'];
-handler.rowner = true;
-
-export default handler;
+export default handler
