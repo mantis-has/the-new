@@ -26,21 +26,23 @@ let handler = async (m, { conn, args }) => {
     let perfil = await conn.profilePictureUrl(userId, 'image').catch(_ => 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg');
 
     let profileText = `
-「✿」 *Perfil* ◢@${userId.split('@')[0]}◤
-${description}
+『 PERFIL DEL USUARIO 』
 
-✦ Edad » ${user.age || 'Desconocida'}
-♛ *Cumpleaños* » ${cumpleanos}
-⚥ *Género* » ${genero}
-♡ *Casado con* » ${pareja}
+🩵 *usuario:* ${nombre}
+💎 *tag:* @${userId.split('@')[0]}
+🩵 *Premium:* ${user.premium ? '✅' : '❌'}
 
-☆ *Experiencia* » ${exp.toLocaleString()}
-❖ *Nivel* » ${nivel}
-✎ Rango » ${role}
-
-⛁ *Coins Cartera* » ${coins.toLocaleString()} ${moneda}
-⛃ *Coins Banco* » ${bankCoins.toLocaleString()} ${moneda}
-❁ *Premium* » ${user.premium ? '✅' : '❌'}
+╭━━━━━━━━━━━━━╮
+┃💎 *Cumpleaños:* ${cumpleaños}
+┃💎 *Género:* ${genero}
+┃💎 *Diamantes:* ${coins.toLocaleString()}
+┃💎 *Diamantes en el banco:* ${bankCoins.toLocaleString()}
+┃💎 *Nivel:* ${level}
+┃💎 *Experiencia:* ${exp.toLocaleString()}
+┃💎 *Rango:* ${role}
+┃💎 *Casado con ${pareja}
+╰━━━━━━━━━━━━━
+> © Desarrollado por Félix 
   `.trim();
 
     await conn.sendMessage(m.chat, { 
@@ -48,7 +50,7 @@ ${description}
         contextInfo: {
             mentionedJid: [userId],
             externalAdReply: {
-                title: '✧ Perfil de Usuario ✧',
+                title: '✧ Perfil - Makima Bot MD ✧',
                 body: dev,
                 thumbnailUrl: perfil,
                 mediaType: 1,
