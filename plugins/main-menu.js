@@ -22,7 +22,7 @@ Become a subbot using #code or #qr
 
 • :･ﾟ⊹˚• \`『 INFO 』\` •˚⊹:･ﾟ•
 
-❍ Comandos para ver estado e información de la Bot.
+❍ Comandos para ver estado e información del Bot.
 ᰔᩚ *#help • #menu*
 > ✦ Ver la lista de comandos de la Bot.
 ᰔᩚ *#uptime • #runtime*
