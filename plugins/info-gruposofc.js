@@ -2,18 +2,7 @@ import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
 
-let grupos = `*Hola!, Estos son los grupos oficiales.*
-
-- ${namegrupo}
-> *💎* ${gp1}
-
-${namecomu}
-> *💎* ${comunidad1}
-
-*ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─* 
-
-- ${namechannel}
-> *💎* ${channel}
+let grupos = `*Hola!, Este comando está deshabilitado por mi creador.
 
 > ${dev}`
 
